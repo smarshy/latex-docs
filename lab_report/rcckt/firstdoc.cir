@@ -1,0 +1,11 @@
+*RC CKT:lab ex1
+R1 1 2 1.5k
+C1 2 0 0.003n
+VIN 1 0 PULSE (0 1.8 0n 2n 2n 50n 100n)
+.TRAN 1n 200n
+.CONTROL
+run
+display
+plot V(1) V(2)
+.endc
+.end
